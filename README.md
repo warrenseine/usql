@@ -17,3 +17,11 @@ curl -s -o usql https://github.com/warrenseine/usql/raw/main/usql_static
 chmod +x usql
 ./usql pg://$PGHOST/$PGDATABASE
 ```
+
+or
+
+```python
+python3 -c "from urllib.request import urlretrieve; urlretrieve('https://github.com/warrenseine/usql/raw/main/usql_static', 'usql')"
+chmod +x usql
+./usql pg://$PGHOST/$PGDATABASE
+```
